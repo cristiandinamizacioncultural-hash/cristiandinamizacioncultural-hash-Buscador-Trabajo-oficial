@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Empleo Público - Granada Capital</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #0284c7;
+            --success: #16a34a;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .intro {
+            background: #e0f2fe;
+            padding: 15px;
+            border-left: 5px solid var(--secondary);
+            margin-bottom: 25px;
+            border-radius: 0 4px 4px 0;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            color: var(--secondary);
+            font-size: 1.4rem;
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            background: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+        .card p {
+            margin: 0 0 15px 0;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: var(--secondary);
+        }
+        .btn-empresa {
+            background: var(--success);
+        }
+        .btn-empresa:hover {
+            background: #15803d;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lanzadera de Empleo Público - Granada Capital</h1>
+    
+    <div class="intro">
+        <strong>💡 Consejos de Experto:</strong> Las plazas se publican bajo las siglas 
+        <em>OEP (Oferta de Empleo Público)</em> o en las secciones de <em>"Tablón de Anuncios / Sede Electrónica"</em>. 
+        Revisa especialmente las bolsas de trabajo abiertas o de urgencia.
+    </div>
+
+    <!-- ADMINISTRACIÓN LOCAL -->
+    <div class="category">
+        <h2>🏛️ Ayuntamiento de Granada y Empresas Municipales</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Ayuntamiento de Granada</h3>
+                <p>Ofertas de empleo, oposiciones y bolsas de trabajo municipales vigentes.</p>
+                <a href="https://granada.org" target="_blank" class="btn">Ver Empleo Público</a>
+            </div>
+            <div class="card">
+                <h3>GEGSA</h3>
+                <p>Granada Eventos Globales S.A. Gestión de eventos y espacios culturales/deportivos.</p>
+                <a href="https://gegsa.es" target="_blank" class="btn btn-empresa">Web y Ofertas</a>
+            </div>
+            <div class="card">
+                <h3>TG7 (GEGSA Televisión)</h3>
+                <p>Televisión Municipal de Granada. Procesos de selección de personal técnico y periodístico.</p>
+                <a href="https://tg7.es" target="_blank" class="btn btn-empresa">Web Oficial</a>
+            </div>
+            <div class="card">
+                <h3>Emasagra (Participada)</h3>
+                <p>Empresa Municipal de Abastecimiento y Saneamiento de Granada.</p>
+                <a href="https://emasagra.es" target="_blank" class="btn btn-empresa">Trabaja con Nosotros</a>
+            </div>
+            <div class="card">
+                <h3>Inagra (Participada)</h3>
+                <p>Empresa encargada de la recogida de residuos y limpieza viaria en la capital.</p>
+                <a href="https://inagra.es" target="_blank" class="btn btn-empresa">Canal de Empleo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- UNIVERSIDAD Y EDUCACIÓN -->
+    <div class="category">
+        <h2>🎓 Universidad y Centros de Investigación</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Universidad de Granada (UGR)</h3>
+                <p>Puestos para PAS (Personal de Administración y Servicios) y PDI (Docente/Investigador).</p>
+                <a href="https://ugr.es" target="_blank" class="btn">Empleo PAS / UGR</a>
+            </div>
+            <div class="card">
+                <h3>CSIC - Granada</h3>
+                <p>Plazas en el Instituto de Astrofísica de Andalucía (IAA) o la Estación Experimental del Zaidín.</p>
+                <a href="https://csic.es" target="_blank" class="btn">Empleo IAA-CSIC</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMINISTRACIÓN PROVINCIAL Y AUTONÓMICA -->
+    <div class="category">
+        <h2>🌍 Diputación y Junta de Andalucía en Granada</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Diputación de Granada</h3>
+                <p>Procesos selectivos para la provincia y sedes administrativas de la capital.</p>
+                <a href="https://dipgra.es" target="_blank" class="btn">Portal de Empleo</a>
+            </div>
+            <div class="card">
+                <h3>SAS (Servicio Andaluz de Salud)</h3>
+                <p>Bolsa de empleo y oposiciones para Hospitales (Virgen de las Nieves, Clínico San Cecilio).</p>
+                <a href="https://juntadeandalucia.es" target="_blank" class="btn">Bolsa del SAS</a>
+            </div>
+            <div class="card">
+                <h3>Junta de Andalucía (General)</h3>
+                <p>Delegaciones territoriales en Granada capital (Administración general).</p>
+                <a href="https://juntadeandalucia.es" target="_blank" class="btn">Web de Función Pública</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTOR SANITARIO / BIOTECNOLÓGICO -->
+    <div class="category">
+        <h2>🔬 PTS y Entidades Públicas Tecnológicas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Fundación Progreso y Salud</h3>
+                <p>Centros de investigación del Parque Tecnológico de la Salud (PTS).</p>
+                <a href="https://juntadeandalucia.es" target="_blank" class="btn btn-empresa">Ofertas de Empleo</a>
+            </div>
+            <div class="card">
+                <h3>FIBAO</h3>
+                <p>Fundación Alejandro Otero para la Investigación Biosanitaria en Andalucía Oriental.</p>
+                <a href="https://fibao.es" target="_blank" class="btn btn-empresa">Convocatorias FIBAO</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Actualizado para búsqueda activa en Granada Capital • Recuerda activar los certificados digitales o Clave PIN para las inscripciones.</p>
+    </footer>
+</div>
+
+</body>
+</html>
